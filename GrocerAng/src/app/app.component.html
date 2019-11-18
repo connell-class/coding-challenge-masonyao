@@ -1,0 +1,20 @@
+<div class="container">
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>Item Id</th>
+            <th>Item Type</th>
+            <th>Item Name</th>
+            <th>Item List</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let grocery of groceries">
+          <td>{{ grocery.item_id }}</td>
+          <td>{{ grocery.item_type }}</td>
+          <td>{{ grocery.item_name }}</td>
+          <td>{{ grocery.item_list }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
